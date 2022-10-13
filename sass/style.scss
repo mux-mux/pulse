@@ -1,8 +1,15 @@
+@import "base/general";
+@import "base/media";
+@import "base/var_mix";
+
 * {
 	font-family: 'Museo Sans', sans-serif;
 	font-weight: 500;
 }
-	
-
-@import "general";
-@import "media";
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+}
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
