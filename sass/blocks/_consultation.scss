@@ -1,9 +1,10 @@
 .consultation {
     min-height: 680px;
-    padding: 100px 0 92px 0;
+    padding: 100px 10px 92px;
     background: url(../img/second-bg.jpg) center (center/cover) no-repeat;
     color: #fff;
     &__descr {
+        margin-top: 80px;
         font-size: 20px;
         font-weight: 500;
         text-align: left;
