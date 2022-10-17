@@ -35,8 +35,59 @@ $(document).ready(function(){
             $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
         })
     });
+
+        // Modal
+        $('[data-modal=consultation]').on('click', function() {
+            $('.overlay, #consultation').fadeIn();
+        });
+        $('.button_submit').on('submit', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.overlay, #order, #consultation').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+        });
+
+        $('.button_mini').each(function(i) {
+            $(this).on('click', function() {
+                $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+                $('.overlay, #order').fadeIn();
+            })
+        });
     
-});
+        $('.modal__close').on('click', function() {
+            $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+        });
+
+        //Validate
+        function validateForms(form) {
+            $(form).validate({
+                rules: {
+                    name: {
+                        required: true,
+                        minlength: 2
+                      },             
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    name: {required:"Пожалуйста, введите свое имя", 
+                        minlength: jQuery.validator.format("Пожалуйста, введите мин. {0} символа!")},
+                    phone: "Пожалуйста, введите свой номер телефона",
+                    email: {required: "Пожалуйста, введите свою почту",
+                        email: "Формат почты name@domain.com"
+                    }
+                }
+            });
+        }
+        validateForms('#consultation-form');
+        validateForms('#consultation form');
+        validateForms('#order form');
+
+        
+});//jQuery ends
 
 const slider = tns({
     container: '.carousel__inner',

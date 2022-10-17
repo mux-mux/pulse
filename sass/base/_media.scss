@@ -1,3 +1,16 @@
+@media(max-width:1200px) {
+    .carousel .prev {
+        left: 10px;
+    }
+    .carousel .next {
+        right: 10px;
+    }
+    .footer__info {
+        position: static;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+}
 @media(max-width:767px) {
     .title_left {
         font-size: 30px;
@@ -7,6 +20,13 @@
     }
     .header__phone {
         font-size: 16px;
+    }
+    .carousel .prev, .carousel .next {
+        height: 100%;
+    }
+    .carousel .prev img, .carousel .next img {
+        width: 16px;
+        height: 25px;
     }
 }
 @media(max-width:575px) {
@@ -60,5 +80,25 @@
     }
     .button_submit {
         font-size: 14px;
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+    }
+    .footer__info {
+        width: auto;
+    }
+    .modal {
+        min-width: 200px;
+        width: 85%;
+        &__close {
+            top: 5px;
+            right: 5px;
+        }
     }
 }

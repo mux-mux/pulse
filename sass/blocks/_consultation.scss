@@ -9,4 +9,11 @@
         font-weight: 500;
         text-align: left;
     }
+    .error {
+        color: pink;
+    }
+    label.error {
+        font-size: 12px;
+        margin-top: -15px;
+    }
 }

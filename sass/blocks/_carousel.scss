@@ -11,7 +11,7 @@
         transform: translateY(-50%);
         left: -66px;
         border: none;
-        background-color: #fff;
+        background-color: rgba(0,0,0,0);
         img {
             width: 31px;
             height: 50px;
@@ -25,6 +25,7 @@
         img {
             display: block;
             margin: 0 auto;
+            width: 100%;
         }
     }
 }
