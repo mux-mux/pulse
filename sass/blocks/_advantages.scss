@@ -29,4 +29,9 @@
             color: #f00;
         }
     }
+    &__icon {
+        &:hover {
+            animation: heartbeat 1s ease infinite;
+        }
+    }
 }

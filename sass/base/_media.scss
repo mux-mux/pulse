@@ -90,6 +90,17 @@
             margin-top: 10px;
         }
     }
+    .reviews {
+        &__wrapper {
+            padding: 20px 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            margin-top: 5px;
+            margin-left: 0;
+        }
+    }
     .footer__info {
         width: auto;
     }
