@@ -1267,10 +1267,9 @@ progress {
 .catalog-item__content_active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
-  margin-right: 20px;
   padding-right: 0;
 }
-.catalog-item__list {
+.catalog-item__benefits {
   padding-left: 19px;
   margin-bottom: 0;
   padding-right: 20px;
@@ -1280,21 +1279,23 @@ progress {
           transform: translateX(0%);
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  list-style-type: none;
 }
-.catalog-item__list_active {
+.catalog-item__benefits_active {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   margin-left: 0;
 }
-.catalog-item__list li {
+.catalog-item__benefits-list {
+  list-style: none;
+}
+.catalog-item__benefits li {
   position: relative;
   font-size: 14px;
   font-weight: 300;
   color: #555555;
   margin-bottom: 20px;
 }
-.catalog-item__list li:before {
+.catalog-item__benefits li:before {
   content: "";
   position: absolute;
   width: 5px;
@@ -1369,6 +1370,11 @@ progress {
 .footer {
   position: relative;
   background-color: #c70101;
+}
+.footer__map {
+  width: 100%;
+  height: 800px;
+  border: 0;
 }
 .footer__info {
   position: absolute;
@@ -1494,7 +1500,7 @@ progress {
   display: none;
   position: fixed;
   bottom: 40px;
-  right: 80px;
+  right: 50px;
   width: 40px;
   height: 40px;
 }
