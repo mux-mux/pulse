@@ -910,8 +910,8 @@ progress {
 }
 .header__logo {
   display: block;
-  width: 250px;
-  min-width: 200px;
+  width: 150px;
+  margin-left: 10px;
 }
 .header__logo img {
   width: 100%;
