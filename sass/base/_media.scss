@@ -1,115 +1,123 @@
-@media(max-width:1200px) {
-    .carousel .prev {
-        left: 10px;
-    }
-    .carousel .next {
-        right: 10px;
-    }
-    .footer__info {
-        position: static;
-        margin: 0 auto;
-        transform: translateX(0);
-    }
+@media (max-width: 1200px) {
+  .carousel .prev {
+    left: 10px;
+  }
+  .carousel .next {
+    right: 10px;
+  }
+  .footer__info {
+    position: static;
+    margin: 0 auto;
+    transform: translateX(0);
+  }
 }
-@media(max-width:767px) {
-    .title_left {
-        font-size: 30px;
-    }
-    .header__official span {
-        font-size: 16px;
-    }
-    .header__phone {
-        font-size: 16px;
-    }
-    .carousel .prev, .carousel .next {
-        height: 100%;
-    }
-    .carousel .prev img, .carousel .next img {
-        width: 16px;
-        height: 25px;
-    }
+@media (max-width: 767px) {
+  .title_left {
+    font-size: 30px;
+  }
+  .header__official span {
+    font-size: 16px;
+  }
+  .header__phone {
+    font-size: 16px;
+  }
+  .carousel .prev,
+  .carousel .next {
+    height: 100%;
+  }
+  .carousel .prev img,
+  .carousel .next img {
+    width: 16px;
+    height: 25px;
+  }
 }
-@media(max-width:575px) {
-    .header {
-        flex-direction: column;
-        &__official {
-            margin: 10px 0;
-        }
+@media (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    &__official {
+      margin: 10px 0;
     }
-    .promo {
-        padding-bottom: 30px;
-        &__wrapper {
-            margin-top: 40px;
-            text-align: center;
-            align-items: center;
-        }
-        &__icons {
-            margin-top: 40px;
-        }
-        &__icon {
-            width: 100px;
-        }
+    &__contacts {
+      align-items: center;
     }
-    .advantages {
-        padding: 30px 10px;
-        &__wrapper {
-            flex-direction: column;
-            align-items: center;
-            margin-top: 0;
-        }
-        &__label {
-            margin: 0;
-        }
-        &__item {
-            margin-top: 10px;
-        }
+    &__phone {
+      padding: 10px;
     }
-    .consultation {
-        padding: 50px 10px;
-        &__descr {
-            text-align: center;
-        }
+  }
+  .promo {
+    padding-bottom: 30px;
+    &__wrapper {
+      margin-top: 40px;
+      text-align: center;
+      align-items: center;
     }
-    .title_left {
-        text-align: center;
+    &__icons {
+      margin-top: 40px;
     }
-    .feed-form {
-        margin: 36px auto 0;
-        width: 50%;
-        min-width: 200px;
+    &__icon {
+      width: 100px;
     }
-    .button_submit {
-        font-size: 14px;
+  }
+  .advantages {
+    padding: 30px 10px;
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
     }
-    .catalog {
-        &__tabs {
-            flex-direction: column;
-        }
-        &__tab {
-            font-size: 15px;
-            margin-top: 10px;
-        }
+    &__label {
+      margin: 0;
     }
-    .reviews {
-        &__wrapper {
-            padding: 20px 0;
-            flex-direction: column;
-            align-items: center;
-        }
-        &__descr {
-            margin-top: 5px;
-            margin-left: 0;
-        }
+    &__item {
+      margin-top: 10px;
     }
-    .footer__info {
-        width: auto;
+  }
+  .consultation {
+    padding: 50px 10px;
+    &__descr {
+      text-align: center;
     }
-    .modal {
-        min-width: 200px;
-        width: 85%;
-        &__close {
-            top: 5px;
-            right: 5px;
-        }
+  }
+  .title_left {
+    text-align: center;
+  }
+  .feed-form {
+    margin: 36px auto 0;
+    width: 50%;
+    min-width: 200px;
+  }
+  .button_submit {
+    font-size: 14px;
+  }
+  .catalog {
+    &__tabs {
+      flex-direction: column;
     }
+    &__tab {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+  .reviews {
+    &__wrapper {
+      padding: 20px 0;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__descr {
+      margin-top: 5px;
+      margin-left: 0;
+    }
+  }
+  .footer__info {
+    width: auto;
+  }
+  .modal {
+    min-width: 200px;
+    width: 85%;
+    &__close {
+      top: 5px;
+      right: 5px;
+    }
+  }
 }

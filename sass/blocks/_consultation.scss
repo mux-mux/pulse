@@ -1,19 +1,24 @@
+.no-webp .consultation {
+  background: url(../img/second-bg.jpg) center (center/cover) no-repeat;
+}
+.webp .consultation {
+  background: url(../img/webp/second-bg.webp) center (center/cover) no-repeat;
+}
 .consultation {
-    min-height: 680px;
-    padding: 100px 10px 92px;
-    background: url(../img/second-bg.jpg) center (center/cover) no-repeat;
-    color: #fff;
-    &__descr {
-        margin-top: 80px;
-        font-size: 20px;
-        font-weight: 500;
-        text-align: left;
-    }
-    .error {
-        color: pink;
-    }
-    label.error {
-        font-size: 12px;
-        margin-top: -15px;
-    }
+  min-height: 680px;
+  padding: 100px 10px 92px;
+  color: #fff;
+  &__descr {
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .error {
+    color: pink;
+  }
+  label.error {
+    font-size: 12px;
+    margin-top: -15px;
+  }
 }

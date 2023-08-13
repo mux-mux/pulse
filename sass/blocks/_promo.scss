@@ -1,50 +1,55 @@
+.no-webp .promo {
+  background: url(../img/main-bg.jpg) center (center/cover) no-repeat;
+}
+.webp .promo {
+  background: url(../img/webp/main-bg.webp) center (center/cover) no-repeat;
+}
 .promo {
-    min-height: 650px;
-    padding: 21px 10px 93px;
-    background: url(../img/main-bg.jpg) center (center/cover) no-repeat;
-    color: #fff;
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: 90px;
+  min-height: 650px;
+  padding: 21px 10px 93px;
+  color: #fff;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 90px;
+  }
+  &__header {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+  }
+  &__subheader {
+    margin-top: 17px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &__icons {
+    margin-top: 65px;
+    max-width: 425px;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__icon {
+    width: 108px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
     }
-    &__header {
-        font-size: 42px;
-        font-weight: 700;
-        line-height: 42px;
+  }
+  &__link {
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    a {
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: #fff;
     }
-    &__subheader {
-        margin-top: 17px;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 24px;
-    }
-    &__icons {
-        margin-top: 65px;
-        max-width: 425px;
-        display: flex;
-        justify-content: space-around;
-    }
-    &__icon {
-        width: 108px;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-    }
-    &__link {
-        margin-top: 18px;
-        font-size: 16px;
-        font-weight: 500;
-        a {
-            text-decoration: underline;
-            text-transform: uppercase;
-            color: #fff;
-        }
-    }
+  }
 }
