@@ -98,11 +98,28 @@
           Просто заповніть форму заявки <br />
           і ми передзвонимо вам протягом 10 хвилин
         </div>
-        <form id="consultation-form" class="feed-form" action="#">
-          <input name="name" placeholder="Ваше ім'я" required type="text" />
-          <input name="phone" placeholder="Ваш телефон" required />
-          <input name="email" placeholder="Ваш E-mail" required type="email" />
-
+        <form id="consultation-form" class="feed-form" action="./mailer/smart.php" method="post">
+          <input
+            type="text"
+            name="name"
+            placeholder="Ваше ім'я"
+            minlength="2"
+            maxlength="90"
+            required
+          />
+          <input
+            name="phone"
+            placeholder="Ваш телефон"
+            pattern="^\+[0-9]{2}\((\d+)\)\d{3}-\d{2}-\d{2}"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Ваш E-mail"
+            pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+            required
+          />
           <button class="button button_submit">замовити КОНСУЛЬТАЦІЮ</button>
         </form>
       </div>
@@ -496,10 +513,27 @@
         <div class="modal__subtitle">Просто заповніть форму заявки</div>
         <div class="modal__descr">і ми передзвонимо вам протягом 10 хвилин</div>
         <form class="feed-form feed-form_mt25" action="./mailer/smart.php" method="post">
-          <input name="name" placeholder="Ваше ім'я" type="text" />
-          <input name="phone" placeholder="Ваш телефон" />
-          <input name="email" placeholder="Ваш E-mail" type="email" />
-
+          <input
+            type="text"
+            name="name"
+            placeholder="Ваше ім'я"
+            minlength="2"
+            maxlength="90"
+            required
+          />
+          <input
+            name="phone"
+            placeholder="Ваш телефон"
+            pattern="^\+[0-9]{2}\((\d+)\)\d{3}-\d{2}-\d{2}"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Ваш E-mail"
+            pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+            required
+          />
           <button class="button button_submit">замовити КОНСУЛЬТАЦІЮ</button>
         </form>
       </div>
@@ -508,11 +542,28 @@
         <div class="modal__close">&times;</div>
         <div class="modal__subtitle">Ваш заказ:</div>
         <div class="modal__descr">Пульсометр Polar FT2</div>
-        <form class="feed-form feed-form_mt25" action="#">
-          <input name="name" placeholder="Ваше ім'я" required type="text" />
-          <input name="phone" placeholder="Ваш телефон" required />
-          <input name="email" placeholder="Ваш E-mail" required type="email" />
-
+        <form class="feed-form feed-form_mt25" action="./mailer/smart.php" method="post">
+          <input
+            type="text"
+            name="name"
+            placeholder="Ваше ім'я"
+            minlength="2"
+            maxlength="90"
+            required
+          />
+          <input
+            name="phone"
+            placeholder="Ваш телефон"
+            pattern="^\+[0-9]{2}\((\d+)\)\d{3}-\d{2}-\d{2}"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Ваш E-mail"
+            pattern="^([^ ]+@[^ ]+\.[a-z]{2,6}|)$"
+            required
+          />
           <button class="button button_submit">КУПИТИ</button>
         </form>
       </div>

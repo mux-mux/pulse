@@ -80,13 +80,13 @@ $(document).ready(function () {
       },
       messages: {
         name: {
-          required: 'Пожалуйста, введите свое имя',
-          minlength: jQuery.validator.format('Пожалуйста, введите мин. {0} символа!'),
+          required: "Будь ласка, введіть своє ім'я",
+          minlength: jQuery.validator.format('Будь ласка, введіть мін {2} символа!'),
         },
-        phone: 'Пожалуйста, введите свой номер телефона',
+        phone: 'Будь ласка, введіть свій номер телефону',
         email: {
-          required: 'Пожалуйста, введите свою почту',
-          email: 'Формат почты name@domain.com',
+          required: 'Будь ласка, введіть свою пошту',
+          email: 'Формат почти name@domain.com',
         },
       },
     });
@@ -97,23 +97,25 @@ $(document).ready(function () {
 
   $('input[name=phone]').mask('+38(999)999-99-99');
 
-  $('form').submit(function (e) {
+  $('form').on('submit', function (e) {
     e.preventDefault();
-    $.ajax({
-      type: 'POST',
-      url: 'mailer/smart.php',
-      data: $(this).serialize(),
-    }).done(function () {
-      $(this).find('input').val('');
-      $('#consultation, #order').fadeOut();
-      $('.overlay, #thanks').fadeIn();
-      $('form').trigger('reset');
-    });
+    if ($(this).children('input.error').length === 0) {
+      $.ajax({
+        type: 'POST',
+        url: e.target.action,
+        data: $(this).serialize(),
+      }).done(function () {
+        $(this).find('input').val('');
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn();
+        $('form').trigger('reset');
+      });
+    }
     return false;
   });
 
   //Scrolling
-  $(window).scroll(function () {
+  $(window).on('scroll', function () {
     if ($(this).scrollTop() > 1000) {
       $('.pageup').fadeIn();
     } else {
