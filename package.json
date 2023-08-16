@@ -1,0 +1,29 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "description": "Pulse meter shop",
+  "main": "index.html",
+  "scripts": {
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+    "compress": "node-sass css/style.css css/style.css --output-style compressed",
+    "build": "npm-run-all prefix compress",
+    "server": "http-server -o",
+    "compile": "node-sass sass/style.scss css/style.css -w",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run compile\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mux-mux/pulse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/mux-mux/pulse#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
+    "http-server": "^14.1.1",
+    "node-sass": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0"
+  }
+}
