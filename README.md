@@ -41,6 +41,9 @@ $ git clone git@github.com:mux-mux/pulse.git
 # Go into the repository
 $ cd pulse
 
-# Open browser listen to changes
+# Install dependencies
+$ npm install
+
+# Open browser & listen to scss changes
 $ npm run dev
 ```
