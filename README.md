@@ -28,7 +28,7 @@
 ## Folder structure :open_file_folder:
 
 <div align="center">
-  <img src="https://jsgo.pro/media/structure/pulse_folder_structure.jpg" alt="Pulse Folder structure" width="100%" />
+  <img src="https://jsgo.pro/media/structure/pulse_project_structure.png" alt="Pulse Folder structure" width="100%" />
   <br>
 </div>
 
